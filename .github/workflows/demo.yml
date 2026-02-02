@@ -1,0 +1,17 @@
+name: Git doc workflows action
+run-name: ${{ github.actor }} is learning GitHub Actions
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello message
+        run: echo "Hellooooooooooooooooooooooo world, ceci est mon premier message!"
+
+      - name: Print AZERTY message
+        run: echo "AZERTYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY !!"
