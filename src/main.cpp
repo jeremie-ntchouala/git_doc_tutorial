@@ -6,4 +6,6 @@ int main(int argc, char *argv[])
 
     std::cout << "(automate) Hello world! (Using Github action)" << std::endl;
 
+    std::cout << "Trying du create a new pull request" << std::endl;
+
 }
