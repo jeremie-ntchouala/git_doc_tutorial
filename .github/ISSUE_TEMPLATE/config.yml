@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: "Questions / Q&A"
+    url: "https://github.com/jeremie-ntchouala/git_doc_tutorial/discussions/categories/q-a"
+    about: "Use Discussions for questions, usage help, and design ideas."
+  - name: "Security Vulnerabilities"
+    url: "mailto:102539189+jeremie-ntchouala@users.noreply.github.com"
+    about: "Report security issues privately."
+
+# Replace OWNER/REPO and email with your values.
