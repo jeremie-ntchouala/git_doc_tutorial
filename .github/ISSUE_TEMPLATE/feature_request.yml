@@ -1,0 +1,55 @@
+name: "✨ Feature Request"
+description: "Propose a new feature or improvement."
+title: "[Feature]: "
+labels: [enhancement]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: "Help us understand the value, scope, and impact."
+
+  - type: input
+    id: summary
+    attributes:
+      label: "Summary"
+      placeholder: "Add compile-time configuration for XYZ"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem / Use Case"
+      placeholder: "What limitation are you hitting?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposed Solution / API"
+      placeholder: |
+        - Public API changes (headers/namespaces)
+        - CMake options/flags (e.g., FOO_BUILD_TESTS)
+        - Backward compatibility plan
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: "Estimated Scope"
+      options:
+        - Small (≤1 day)
+        - Medium (2–5 days)
+        - Large (>5 days)
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: impl_help
+    attributes:
+      label: "Contribution"
+      options:
+        - label: "I can help implement this (PR)"
+        - label: "I can help review"
