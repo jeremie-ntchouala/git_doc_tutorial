@@ -1,0 +1,36 @@
+name: "📚 Documentation"
+description: "Suggest documentation updates."
+title: "[Docs]: "
+labels: [documentation]
+assignees: []
+body:
+  - type: input
+    id: page
+    attributes:
+      label: "Page / Section"
+      placeholder: "docs/building.md#windows-msvc"
+    validations:
+      required: false
+
+  - type: textarea
+    id: current
+    attributes:
+      label: "Current Behavior / Text"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed
+    attributes:
+      label: "Proposed Change"
+      placeholder: "Exact replacement text or example snippets."
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: "References / Links / Compiler docs"
+      placeholder: "Links to relevant standards references, compiler notes, etc."
+    validations:
+      required: false
